@@ -36,9 +36,6 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
-    scripts:
-      preRequest: ""
-      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -62,9 +59,6 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
-    scripts:
-      preRequest: ""
-      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -88,9 +82,6 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
-    scripts:
-      preRequest: ""
-      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -114,9 +105,6 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
-    scripts:
-      preRequest: ""
-      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -138,9 +126,27 @@ collection:
     headers:
       - name: User-Agent
         value: insomnia/11.3.0
-    scripts:
-      preRequest: ""
-      afterResponse: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://httpbin.org/cookies
+    name: cookie
+    meta:
+      id: req_439e0f830de94f1f839bebe381df6770
+      created: 1757677309581
+      modified: 1757677332907
+      isPrivate: false
+      description: ""
+      sortKey: -1757677309581
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.0
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -155,6 +161,14 @@ cookieJar:
     id: jar_eeeaf40ad1a44a229e509e8512078f8d
     created: 1752228253539
     modified: 1752228253539
+  cookies:
+    - id: 09113f78-26f1-4eff-a774-7c9e8458a1f1
+      key: session
+      value: git_session
+      domain: httpbin.org
+      path: /
+      secure: true
+      httpOnly: false
 environments:
   name: Base Environment
   meta:
