@@ -113,27 +113,6 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: https://localhost:3000
-    name: New Request
-    meta:
-      id: req_526f8406a4ff495a96a6fc317c1b074e
-      created: 1752228320793
-      modified: 1752228328127
-      isPrivate: false
-      description: ""
-      sortKey: -1752228320793
-    method: GET
-    headers:
-      - name: User-Agent
-        value: insomnia/11.3.0
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
   - url: https://httpbin.org/cookies
     name: cookie
     meta:
