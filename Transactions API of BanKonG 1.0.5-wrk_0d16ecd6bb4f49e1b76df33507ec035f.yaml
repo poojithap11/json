@@ -15,7 +15,7 @@ collection:
       isPrivate: false
       description: Initiate a transaction
       sortKey: -1752228318280
-    method: POST
+    method: GET
     body:
       mimeType: application/json
       text: |-
