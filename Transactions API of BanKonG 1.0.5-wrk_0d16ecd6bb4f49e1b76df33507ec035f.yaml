@@ -134,12 +134,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: https://httpbin.org/cookies
+  - url: https://httpbin.org/
     name: cookie
     meta:
       id: req_439e0f830de94f1f839bebe381df6770
       created: 1757677309581
-      modified: 1757677332907
+      modified: 1763468619493
       isPrivate: false
       description: ""
       sortKey: -1757677309581
@@ -359,3 +359,21 @@ spec:
     id: spc_5d1ca3f2a39043a885bd1f1a1170d38f
     created: 1754654127846
     modified: 1754654127847
+testSuites:
+  - name: New Suite
+    meta:
+      id: uts_22939eec38a04e9bbdab0bbc0cfcd98c
+      created: 1763468601878
+      modified: 1763468601878
+      sortKey: -1763468601878
+    tests:
+      - name: Returns 200
+        meta:
+          id: ut_78391709d86c4b90886c7aa5b13a26ec
+          created: 1763468603774
+          modified: 1763468668598
+          sortKey: -1763468603774
+        requestId: req_439e0f830de94f1f839bebe381df6770
+        code: |-
+          const response = await insomnia.send();
+          expect(response.status).to.equal(200);
