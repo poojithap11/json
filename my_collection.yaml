@@ -1,0 +1,142 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: new
+meta:
+  id: wrk_c6b3e4d83f304bd4a5426f16b21bcf4f
+  created: 1765429084980
+  modified: 1765429084980
+  description: ""
+collection:
+  - url: https://google.com
+    name: New Request
+    meta:
+      id: req_005a716cdf40460b8e510dd15aa3384c
+      created: 1765429097609
+      modified: 1765518441689
+      isPrivate: false
+      description: ""
+      sortKey: -1765429097609
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    scripts:
+      preRequest: |-
+        const baseUri = await insomnia.environment.get("baseUri");
+        const result = eval("baseUri");
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: ""
+    name: New Request
+    meta:
+      id: req_24c28213c6cf4bc7af598f5db27e882f
+      created: 1765429100500
+      modified: 1765429100500
+      isPrivate: false
+      description: ""
+      sortKey: -1765429100500
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://google.com
+    name: New Request
+    meta:
+      id: req_a8defeb4801a4b93bf83398620dc074b
+      created: 1765429175464
+      modified: 1765429725389
+      isPrivate: false
+      description: ""
+      sortKey: -1765429175464
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: ""
+    name: New Request
+    meta:
+      id: req_ab45e9e2a5da422aae6930851fcc821a
+      created: 1765430679312
+      modified: 1765430679312
+      isPrivate: false
+      description: ""
+      sortKey: -1765430679312
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_e01a0433cb6da9fcdefad0cc635f811fa50ed78e
+    created: 1765429084983
+    modified: 1765518388518
+  cookies:
+    - id: 773de154-5237-4d21-8464-c536cf3693c0
+      key: AEC
+      value: AaJma5s4raenhW3gM1a7TX1r3q2n67Zrgrzlk-1ltmG-ZH-DSCRWSF_5z-Q
+      domain: google.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+    - id: a0551221-9a49-4839-8203-a4fcfcf77a1b
+      key: NID
+      value: 527=C_K6owiOXOj6g56m3kEjMUVABzvm45DU1qOxkjWKzw1_izYV15ygymeICjCxlP_6-gVqDu0M0wMrnWcl2CvWGNIFRx8JN72xrR2RSrQi00CutwJXg3KuOm7EfQqUm_TrISW7OGOvuMSj2kwjVRVxtDwCx8HmZZiz34UsLuZHr_1vfpr8KC8CVX7tkWFUUkXD3GKsQaSr34Gv-0XmZJ6T5QmW1j1lgGwrfA
+      domain: google.com
+      path: /
+      secure: false
+      httpOnly: true
+    - id: 28d209a9-9bbb-4bae-859d-7b1b56b07584
+      key: __Secure-BUCKET
+      value: CJ4D
+      domain: google.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+environments:
+  name: Base Environment
+  meta:
+    id: env_e01a0433cb6da9fcdefad0cc635f811fa50ed78e
+    created: 1765429084983
+    modified: 1765518387711
+    isPrivate: false

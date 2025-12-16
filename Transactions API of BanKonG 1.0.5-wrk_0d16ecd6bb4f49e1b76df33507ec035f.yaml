@@ -1,4 +1,5 @@
 type: spec.insomnia.rest/5.0
+schema_version: "5.1"
 name: Transactions API of BanKonG 1.0.5
 meta:
   id: wrk_0d16ecd6bb4f49e1b76df33507ec035f
@@ -155,6 +156,13 @@ collection:
         send: true
         store: true
       rebuildPath: true
+  - name: My Folder
+    meta:
+      id: fld_3563acc9840f479ca91e90a7263671da
+      created: 1765430093893
+      modified: 1765430093893
+      sortKey: -1765430093893
+      description: ""
 cookieJar:
   name: Default Jar
   meta:
@@ -208,7 +216,7 @@ spec:
         api-key
 
 
-        :bulb: this API is rate limited
+        :bulb: this API in rate limited
     servers:
       - url: http://localhost:3000/
         description: local sandbox environment
@@ -358,7 +366,7 @@ spec:
   meta:
     id: spc_5d1ca3f2a39043a885bd1f1a1170d38f
     created: 1754654127846
-    modified: 1754654127847
+    modified: 1765432504365
 testSuites:
   - name: New Suite
     meta:
